@@ -1,8 +1,23 @@
-# React + Vite
+# State Management Clothes Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a frontend project for a clothing store that implements state management using Redux Toolkit.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React 19
+- Redux Toolkit
+- React Redux
+- React Router DOM
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Deployed Link
+[Deployed Link](#) <!-- Add the deployed link here -->
+
+## Modules Used
+### Dependencies
+```json
+"dependencies": {
+  "@reduxjs/toolkit": "^2.5.1",
+  "react": "^19.0.0",
+  "react-dom": "^19.0.0",
+  "react-redux": "^9.2.0",
+  "react-router-dom": "^7.1.5"
+}
