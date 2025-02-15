@@ -36,8 +36,8 @@ The following modules were used in the backend:
 ```
 
 ## Deployed Links
-- **Frontend:** [https://heal-tether-assignments.vercel.app/]
-- **Backend:** [https://healtether-assignments-task1-server.onrender.com]
+- **Frontend:** [Vercel Deployed Link](https://heal-tether-assignments.vercel.app/)
+- **Backend:** [Backend Render](https://healtether-assignments-task1-server.onrender.com)
 
 ## Features
 - User Authentication (Register/Login)
