@@ -14,7 +14,7 @@ app.use("/api/users", userRoutes);
 
 mongoose
   .connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("MongoDB connected"))
+  .then(() => console.log("MongoDB Atlas connected"))
   .catch((err) => console.log(err));
 
 const PORT = process.env.PORT || 5000;

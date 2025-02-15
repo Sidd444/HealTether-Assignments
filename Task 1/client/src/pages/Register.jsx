@@ -8,19 +8,27 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [description, setDescription] = useState("");
+  const [error, setError] = useState('');
   const { register } = useContext(UserContext);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await register(name, email, password, description);
-    navigate("/login");
-  };
+    try {
+        await register(name, email, password, description);
+        alert("Sign up successful");
+        navigate('/login');
+    } catch (err) { 
+        alert("sign up error");
+        setError(err.response?.data?.message || 'Error signing up');
+    }
+};
 
   return (
     <div className="min-h-screen flex justify-center items-center bg-gray-900 text-white">
       <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
         <h2 className="text-2xl mb-4">Register</h2>
+        {error && <p className="text-red-600 mb-4">{error}</p>}
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} className="block w-full p-2 mb-2 bg-gray-700" required />
           <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="block w-full p-2 mb-2 bg-gray-700" required />
