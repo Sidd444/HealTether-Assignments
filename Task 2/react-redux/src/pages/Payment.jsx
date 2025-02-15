@@ -37,8 +37,8 @@ const Payment = () => {
 
   return (
     <div className="flex flex-col md:flex-row p-6 bg-gray-900 min-h-screen">
-      <div className="md:w-1/2 p-6 bg-white shadow-lg rounded-lg bg-gray-900">
-        <h2 className="text-2xl font-semibold mb-4  text-white ">Payment Method</h2>
+      <div className="md:w-1/2 p-6 bg-gray-900 shadow-lg rounded-lg ">
+        <h2 className="text-2xl font-semibold mb-4 text-white ">Payment Method</h2>
         <div id="payment-form" className="space-y-4">
           <form className="space-y-4">
             <div>
